@@ -1,8 +1,17 @@
+<%@page import="org.hibernate.SessionFactory"%>
+<%@page import="org.springframework.orm.hibernate3.LocalSessionFactoryBean"%>
+<%@page import="org.springframework.web.context.WebApplicationContext"%>
+<%@page import="org.springframework.web.context.support.WebApplicationContextUtils"%>
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 
+%>
+<%
+ WebApplicationContext wac= WebApplicationContextUtils.getRequiredWebApplicationContext(application);
+ SessionFactory sessionFactory=(SessionFactory)wac.getBean("sessionFactory");
+ 
 %>
 <html lang="en">
 <head>

@@ -12,7 +12,7 @@
         <property name="driverClass" value="com.mysql.jdbc.Driver"/>
  </bean>
  <!-- 配置hibernate的sessionFactory实例 -->
- <bean id="mySessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+ <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
         <property name="dataSource" ref="myDataSource"/>
         <property name="mappingResources">
             <list>
