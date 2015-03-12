@@ -26,6 +26,7 @@
             </value>
         </property>
  </bean>
+ <!-- struts2的action配置 -->
  <bean id="loginAction" class="com.weitie.login.action.LoginAction" >
  	
  </bean>

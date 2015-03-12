@@ -31,7 +31,7 @@ public class LoginAction {
 	}
 
 	public String execute(){
-		System.out.println("-----123----"+this.username+this.password);
+		System.out.println("---------"+this.username+this.password+"-----");
 		return "success";
 		
 	}

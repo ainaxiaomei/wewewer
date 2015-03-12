@@ -11,7 +11,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <%
  WebApplicationContext wac= WebApplicationContextUtils.getRequiredWebApplicationContext(application);
  SessionFactory sessionFactory=(SessionFactory)wac.getBean("sessionFactory");
- 
+ sessionFactory.openSession();
 %>
 <html lang="en">
 <head>
@@ -32,7 +32,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<li><a href="#">主页</a></li>
 			<li><a href="#">图库</a></li>
 			<li><a href="#">关于</a></li>
-			<li><a href="toLogin">登录</a></li>
+			<li><a href="login/toLogin">登录</a></li>
 		</ul></nav>
 	</header>
 		
