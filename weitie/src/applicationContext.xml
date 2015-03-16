@@ -30,7 +30,6 @@
  <bean id="loginAction" class="com.weitie.login.action.LoginAction" >
  	
  </bean>
- 
 
    
 </beans>

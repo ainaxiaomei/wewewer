@@ -1,9 +1,16 @@
 package com.weitie.login.action;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.apache.struts2.ServletActionContext;
+import org.hibernate.validator.util.GetAnnotationParameter;
+
+import com.opensymphony.xwork2.ActionContext;
+
 public class LoginAction {
 	private String username;
 	private String password;
-
+	private static Log log=LogFactory.getLog(LoginAction.class);
 	public String getUsername() {
 		return username;
 	}
@@ -31,7 +38,8 @@ public class LoginAction {
 	}
 
 	public String execute(){
-		System.out.println("---------"+this.username+this.password+"-----");
+		
+		
 		return "success";
 		
 	}
