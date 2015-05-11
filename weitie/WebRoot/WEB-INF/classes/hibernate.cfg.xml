@@ -10,7 +10,7 @@
 			org.hibernate.dialect.MySQLDialect
 		</property>
 		<property name="connection.url">
-			jdbc:mysql://127.0.0.1:3306/base
+			jdbc:mysql://127.0.0.1:3306/party
 		</property>
 		<property name="connection.username">root</property>
 		<property name="connection.driver_class">
@@ -20,7 +20,7 @@
 		<property name="show_sql">true</property>
 		<mapping resource="com/weitie/login/entities/LoginInfo.hbm.xml" />
 
-
+	
 	</session-factory>
 
 </hibernate-configuration>
