@@ -29,6 +29,9 @@
  <bean id="loginAction" class="com.weitie.login.action.LoginAction" scope="prototype" >
  	<property name="loginService" ref="loginServiceBean"></property>
  </bean>
+ <bean id="RegisterAction" class="com.weitie.login.action.RegisterAction" scope="prototype" >
+ 	<property name="loginService" ref="loginServiceBean"></property>
+ </bean>
  <!-- 配置服务的bean -->
  <bean id="loginServiceBean" class="com.weitie.login.service.impls.LoginServiceImpl">
  	<property name="loginDao" ref="loginDaoBean" ></property>

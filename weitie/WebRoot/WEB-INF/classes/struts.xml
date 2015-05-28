@@ -2,7 +2,9 @@
 <!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
 <struts >
     <constant name="struts.devMode" value="true" />
-	<package name="login" extends="struts-default" namespace="/login" >
+    <constant name="struts.enable.DynamicMethodInvocation" value="true" />
+    
+	<package name="login" extends="struts-default" namespace="/login"  >
 	    <interceptors >
 	        <interceptor name="filter" class="com.weitie.login.fliter.TestFilter">
 	            
@@ -13,8 +15,16 @@
 	    <action name="toLogin" >
 	        <result>/WEB-INF/com.weitie.login/login.jsp</result>
 	    </action>
+	    <action name="register*" class="RegisterAction" method="{1}" >
+	    	<result name="SUCCESS">/WEB-INF/com.weitie.login/register.jsp</result>
+	    	<result name="VALCODE" type="stream">
+	    	   <param name="contentType">image/jpeg</param>
+  			   <param name="inputName">imageStream</param>
+ 			   <param name="contentDisposition">attachment;filename="document.pdf"</param>
+  			   <param name="bufferSize">1024</param>
+	    	</result>
+	    </action>
 	    <action name="login" class="loginAction" >
-	       
 	        <result>/WEB-INF/com.weitie.login/login.jsp</result>
 	    </action>
 	</package>
