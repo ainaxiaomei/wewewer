@@ -5,13 +5,6 @@
     <constant name="struts.enable.DynamicMethodInvocation" value="true" />
     
 	<package name="login" extends="struts-default" namespace="/login"  >
-	    <interceptors >
-	        <interceptor name="filter" class="com.weitie.login.fliter.TestFilter">
-	            
-	        </interceptor>
-	        
-	    </interceptors>
-	   	
 	    <action name="toLogin" >
 	        <result>/WEB-INF/com.weitie.login/login.jsp</result>
 	    </action>
@@ -25,6 +18,7 @@
 	    	</result>
 	    </action>
 	    <action name="login" class="loginAction" >
+	       
 	        <result>/WEB-INF/com.weitie.login/login.jsp</result>
 	    </action>
 	</package>

@@ -3,6 +3,9 @@
 	<name>weitie</name>
 	<comment></comment>
 	<projects>
+		<project>struts2-spring-plugin</project>
+		<project>struts2-core</project>
+		<project>xwork-core</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

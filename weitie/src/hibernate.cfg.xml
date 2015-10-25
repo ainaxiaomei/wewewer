@@ -10,7 +10,7 @@
 			org.hibernate.dialect.MySQLDialect
 		</property>
 		<property name="connection.url">
-			jdbc:mysql://127.0.0.1:3306/party
+			jdbc:mysql://112.74.127.177:3306/party
 		</property>
 		<property name="connection.username">root</property>
 		<property name="connection.driver_class">

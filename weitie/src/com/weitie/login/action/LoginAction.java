@@ -1,5 +1,6 @@
 package com.weitie.login.action;
 
+import java.io.File;
 import java.util.Map;
 
 import org.apache.struts2.interceptor.SessionAware;
@@ -15,7 +16,23 @@ import com.weitie.login.service.interfaces.ILoginService;
 public class LoginAction implements SessionAware{
 	private String username;
 	private String password;
+	private File file;
+	private String fileNmae;
+	private String fileContentType;
 	private ILoginService loginService;
+	
+	public void setFile(File file) {
+		this.file = file;
+	}
+
+	public void setFileNmae(String fileNmae) {
+		this.fileNmae = fileNmae;
+	}
+
+	public void setFileContentType(String fileContentType) {
+		this.fileContentType = fileContentType;
+	}
+
 	public ILoginService getLoginService() {
 		return loginService;
 	}

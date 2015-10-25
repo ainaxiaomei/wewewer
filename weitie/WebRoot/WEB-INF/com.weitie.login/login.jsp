@@ -25,12 +25,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
   	<s:debug/>
-    <s:form action="/login/login" name="loginForm">
+    <s:form action="/login/login" name="loginForm" enctype="multipart/form-data">
        <s:label>用户名</s:label>
        <s:textfield name="username" />
         <s:label >密码</s:label>
        <s:password name="password"/>
        <s:submit value="登录"></s:submit>
+       <s:file name="file" label="File"></s:file>
     </s:form>
   </body>
 </html>
