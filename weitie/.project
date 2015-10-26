@@ -6,6 +6,24 @@
 		<project>struts2-spring-plugin</project>
 		<project>struts2-core</project>
 		<project>xwork-core</project>
+		<project>spring-core</project>
+		<project>spring-webmvc</project>
+		<project>spring-test</project>
+		<project>spring-beans-groovy</project>
+		<project>spring-context</project>
+		<project>spring-web</project>
+		<project>spring-aop</project>
+		<project>spring-expression</project>
+		<project>spring-jdbc</project>
+		<project>spring-beans</project>
+		<project>spring-tx</project>
+		<project>spring-context-support</project>
+		<project>spring-instrument</project>
+		<project>spring-orm</project>
+		<project>spring-webmvc-tiles2</project>
+		<project>spring-oxm</project>
+		<project>spring-orm-hibernate4</project>
+		<project>spring-webmvc-portlet</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
@@ -14,8 +32,13 @@
 			</arguments>
 		</buildCommand>
 		<buildCommand>
-			<name>org.eclipse.wst.jsdt.core.javascriptValidator</name>
+			<name>org.eclipse.ui.externaltools.ExternalToolBuilder</name>
+			<triggers>full,incremental,</triggers>
 			<arguments>
+				<dictionary>
+					<key>LaunchConfigHandle</key>
+					<value>&lt;project&gt;/.externalToolBuilders/org.eclipse.wst.jsdt.core.javascriptValidator (2).launch</value>
+				</dictionary>
 			</arguments>
 		</buildCommand>
 		<buildCommand>
@@ -39,8 +62,13 @@
 			</arguments>
 		</buildCommand>
 		<buildCommand>
-			<name>org.eclipse.wst.validation.validationbuilder</name>
+			<name>org.eclipse.ui.externaltools.ExternalToolBuilder</name>
+			<triggers>full,incremental,</triggers>
 			<arguments>
+				<dictionary>
+					<key>LaunchConfigHandle</key>
+					<value>&lt;project&gt;/.externalToolBuilders/org.eclipse.wst.validation.validationbuilder (2).launch</value>
+				</dictionary>
 			</arguments>
 		</buildCommand>
 		<buildCommand>

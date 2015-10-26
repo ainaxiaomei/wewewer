@@ -1,11 +1,18 @@
 package com.weitie.login.action;
 
 import java.io.File;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 import java.util.Map;
 
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.interceptor.SessionAware;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.springframework.context.ApplicationContext;
+import org.springframework.web.context.WebApplicationContext;
 
 import com.opensymphony.xwork2.ActionContext;
 import com.weitie.login.dao.impls.LoginDaoImpl;
@@ -74,6 +81,11 @@ public class LoginAction implements SessionAware{
 
 	public String execute(){
 		try {
+			ApplicationContext ap=(ApplicationContext) ServletActionContext.getServletContext().getAttribute(WebApplicationContext.ROOT_WEB_APPLICATION_CONTEXT_ATTRIBUTE);
+			Object ra= ap.getBean("RegisterAction");
+			Method[] m1=ra.getClass().getDeclaredMethods();
+			Field[] fs=ra.getClass().getDeclaredFields();
+			Method m=ra.getClass().getMethod("execute", new Class[0]);
 			LoginInfo bean=new LoginInfo();
 			bean.setCustId("123");
 			bean.setCustName(username);
