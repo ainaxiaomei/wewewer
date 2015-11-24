@@ -82,10 +82,6 @@ public class LoginAction implements SessionAware{
 	public String execute(){
 		try {
 			ApplicationContext ap=(ApplicationContext) ServletActionContext.getServletContext().getAttribute(WebApplicationContext.ROOT_WEB_APPLICATION_CONTEXT_ATTRIBUTE);
-			Object ra= ap.getBean("RegisterAction");
-			Method[] m1=ra.getClass().getDeclaredMethods();
-			Field[] fs=ra.getClass().getDeclaredFields();
-			Method m=ra.getClass().getMethod("execute", new Class[0]);
 			LoginInfo bean=new LoginInfo();
 			bean.setCustId("123");
 			bean.setCustName(username);

@@ -9,5 +9,7 @@ public interface ILoginService {
 	 * @throws Exception
 	 */
 	public void save(LoginInfo bean)throws Exception;
+	
+	public boolean containsKey(String key);
 		
 }

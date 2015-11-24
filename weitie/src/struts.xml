@@ -8,8 +8,10 @@
 	    <action name="toLogin" >
 	        <result>/WEB-INF/com.weitie.login/login.jsp</result>
 	    </action>
+	    <action name="toRegister" >
+	        <result>/WEB-INF/com.weitie.login/register.jsp</result>
+	    </action>
 	    <action name="register*" class="RegisterAction" method="{1}" >
-	    	<result name="SUCCESS">/WEB-INF/com.weitie.login/register.jsp</result>
 	    	<result name="VALCODE" type="stream">
 	    	   <param name="contentType">image/jpeg</param>
   			   <param name="inputName">imageStream</param>
@@ -18,7 +20,6 @@
 	    	</result>
 	    </action>
 	    <action name="login" class="loginAction" >
-	       
 	        <result>/WEB-INF/com.weitie.login/login.jsp</result>
 	    </action>
 	</package>
