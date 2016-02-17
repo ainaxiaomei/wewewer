@@ -6,8 +6,8 @@
     <session-factory name="">
         <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="hibernate.connection.password">863475850622</property>
-        <property name="hibernate.connection.url">jdbc:mysql://112.74.127.177:3306/party</property>
+        <property name="hibernate.connection.password">00715701</property>
+        <property name="hibernate.connection.url">jdbc:mysql://120.24.46.212:3306/party</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="hibernate.myeclipse.connection.profile">mysql</property>

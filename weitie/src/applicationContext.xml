@@ -15,13 +15,13 @@
 >
  <!-- 配置数据源 -->
  <bean id="myDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
-        <property name="jdbcUrl" value="jdbc:mysql://112.74.127.177:3306/party"/>
+        <property name="jdbcUrl" value="jdbc:mysql://120.24.46.212:3306/party"/>
         <property name="user" value="root"/>
-        <property name="password" value="863475850622"/>
+        <property name="password" value="00715701"/>
         <property name="driverClass" value="com.mysql.jdbc.Driver"/>
  </bean>
  <!-- 配置hibernate的sessionFactory实例 -->
- <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean" >
+ <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
         <property name="dataSource" ref="myDataSource"/>
         <!-- 配置hibernate的相关属性 -->
         <property name="hibernateProperties">

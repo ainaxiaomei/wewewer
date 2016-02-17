@@ -5,32 +5,32 @@
 <hibernate-mapping package="com.weitie.login.entities">
     <class name="LoginInfo" table="LOGIN_INFO" catalog="party">
         <id name="custId" type="string" >
-            <column name="CUST_ID" length="30" />
-            <generator class="assigned" />
+            <column name="CUST_ID"  />
+            <generator class="assigned"/>
         </id>
         <property name="custName" type="string">
-            <column name="CUST_NAME" length="20" not-null="true" />
+            <column name="CUST_NAME"  not-null="true" />
         </property>
         <property name="password" type="string">
-            <column name="PASSWORD" length="20" not-null="true" />
+            <column name="PASSWORD"  not-null="true" />
         </property>
         <property name="ext1" type="string">
-            <column name="EXT1" length="20" />
+            <column name="EXT1"  />
         </property>
         <property name="ext2" type="string">
-            <column name="EXT2" length="20" />
+            <column name="EXT2"  />
         </property>
         <property name="ext5" type="string">
-            <column name="EXT5" length="20" />
+            <column name="EXT5"  />
         </property>
         <property name="ext3" type="string">
-            <column name="EXT3" length="20" />
+            <column name="EXT3"  />
         </property>
         <property name="ext4" type="string">
-            <column name="EXT4" length="20" />
+            <column name="EXT4"  />
         </property>
         <property name="email" type="string">
-            <column name="EMAIL" length="60" />
+            <column name="EMAIL"  />
         </property>
     </class>
 </hibernate-mapping>

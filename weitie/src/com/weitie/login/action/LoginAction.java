@@ -87,7 +87,6 @@ public class LoginAction implements SessionAware{
 			bean.setCustName(username);
 			bean.setPassword(password);
 			loginService.save(bean);
-			
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

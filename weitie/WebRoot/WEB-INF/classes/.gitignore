@@ -1,6 +1,1 @@
-/struts.xml
-/com/
-/hibernate.cfg.xml
-/log4j2.xml
-/applicationContext.xml
-/LoginInfo.class
+/LoginInfo.hbm.xml
